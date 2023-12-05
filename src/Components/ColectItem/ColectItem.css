@@ -1,0 +1,10 @@
+.containers {
+    margin-top: 500px;
+    width: 1500px;
+    height: 100%;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}

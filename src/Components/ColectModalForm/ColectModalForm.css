@@ -1,0 +1,264 @@
+.fixed-overlay {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+/* 
+.fixed-overlay__modal {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.fixed-overlay__modal::after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: "";
+} */
+
+.modal {
+    display: flex;
+    /* display: inline-block; */
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_container {
+    /* margin: 50px;
+    padding: 20px; */
+    width: 1800px;
+    height: 920px;
+    position: relative;
+    text-align: left;
+    white-space: normal;
+    background-color: #030303;
+    color: #ffffff;
+    border-radius: 40%/20%;
+    box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+        1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+    text-align: center;
+}
+
+.modal_title {
+    margin-top: 10px;
+}
+
+.megabox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.formbox {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* margin-left: 580px;
+
+    /* margin-top: 10px; */
+}
+
+.formboxs {
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* margin-left: 580px;
+
+    /* margin-top: 10px; */
+}
+
+.forms {
+    /* margin-top: 200px;
+    margin-left: 50px; */
+    position: relative;
+    width: 300px;
+    height: 50px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* margin: 0 auto; */
+}
+
+.inputik {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    /* border: 2px solid rgb(62, 64, 62); */
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+        1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+}
+
+.labelik {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    color: #ccc;
+    /* padding: 0 5px; */
+    transition: top 0.5s;
+}
+
+.inputik:hover {
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+}
+
+/* .inputik:active {
+    box-shadow: inset 0px 5px 10px 0px rgba(171, 4, 4, 0.7);
+} */
+
+.inputik:valid {
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+}
+
+/* .inputik:focus ~ label {
+    top: -30px;
+     background-color: #000000; 
+    color: white;
+} */
+
+.cl-btn-3 {
+    top: 130px;
+    right: 40px;
+    width: 26px;
+    height: 26px;
+    margin: 40px auto;
+    position: absolute;
+    transform: rotate(45deg) scale(2);
+}
+
+.cl-btn-3 .top,
+.cl-btn-3 .bot {
+    display: block;
+    background: #fe0000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-iteration-count: 1;
+}
+
+.cl-btn-3 .top {
+    height: 100%;
+    width: 2px;
+    margin-left: -1px;
+    transform: skewY(45deg);
+    top: 0;
+}
+
+.cl-btn-3 .bot {
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    transform: skewX(-45deg);
+    left: 0;
+}
+
+@-webkit-keyframes top-out {
+    from {
+        top: 0%;
+        height: 100%;
+    }
+    to {
+        top: 200%;
+        height: 0%;
+    }
+}
+
+@keyframes top-out {
+    from {
+        top: 0%;
+        height: 100%;
+    }
+    to {
+        top: 200%;
+        height: 0%;
+    }
+}
+@-webkit-keyframes top-in {
+    from {
+        top: -100%;
+        height: 0%;
+    }
+    to {
+        top: 0%;
+        height: 100%;
+    }
+}
+@keyframes top-in {
+    from {
+        top: -100%;
+        height: 0%;
+    }
+    to {
+        top: 0%;
+        height: 100%;
+    }
+}
+@-webkit-keyframes bot-out {
+    from {
+        left: 0%;
+        width: 100%;
+    }
+    to {
+        left: 200%;
+        width: 0%;
+    }
+}
+@keyframes bot-out {
+    from {
+        left: 0%;
+        width: 100%;
+    }
+    to {
+        left: 200%;
+        width: 0%;
+    }
+}
+@-webkit-keyframes bot-in {
+    from {
+        left: -100%;
+        width: 0%;
+    }
+    to {
+        left: 0%;
+        width: 100%;
+    }
+}
+@keyframes bot-in {
+    from {
+        left: -100%;
+        width: 0%;
+    }
+    to {
+        left: 0%;
+        width: 100%;
+    }
+}
+.cl-btn-3:hover {
+    cursor: pointer;
+}
+.cl-btn-3:hover .top {
+    animation: top-out 0.25s forwards, top-in 0.25s forwards 0.25s;
+}
+.cl-btn-3:hover .bot {
+    animation: bot-out 0.25s forwards 0.1s, bot-in 0.25s forwards 0.35s;
+}

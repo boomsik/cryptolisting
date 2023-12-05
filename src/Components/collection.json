@@ -1,0 +1,7 @@
+[
+    { "id": "id-1", "name": "ORDI 2.0", "coin": "ORDI2" },
+    { "id": "id-2", "name": "NeroAI", "coin": "NERO" },
+    { "id": "id-3", "name": "NAWARAT", "coin": "NWT" },
+    { "id": "id-4", "name": "Friend3", "coin": "F3" },
+    { "id": "id-5", "name": "APTOS", "coin": "APT" }
+]
