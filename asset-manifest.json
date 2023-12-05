@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cryptolisting/static/css/main.3dd567c8.css",
+    "main.css": "/cryptolisting/static/css/main.55a82724.css",
     "main.js": "/cryptolisting/static/js/main.eb98afe0.js",
     "static/js/787.3877e142.chunk.js": "/cryptolisting/static/js/787.3877e142.chunk.js",
     "static/media/dext-large.png": "/cryptolisting/static/media/dext-large.8a495dc3f14793c6be32.png",
@@ -10,12 +10,12 @@
     "static/media/ave.png": "/cryptolisting/static/media/ave.f1d6889c22166a9e34c1.png",
     "static/media/man.svg": "/cryptolisting/static/media/man.00e650475cbc6a0394359c8ce55c7403.svg",
     "index.html": "/cryptolisting/index.html",
-    "main.3dd567c8.css.map": "/cryptolisting/static/css/main.3dd567c8.css.map",
+    "main.55a82724.css.map": "/cryptolisting/static/css/main.55a82724.css.map",
     "main.eb98afe0.js.map": "/cryptolisting/static/js/main.eb98afe0.js.map",
     "787.3877e142.chunk.js.map": "/cryptolisting/static/js/787.3877e142.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dd567c8.css",
+    "static/css/main.55a82724.css",
     "static/js/main.eb98afe0.js"
   ]
 }
