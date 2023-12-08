@@ -12,7 +12,29 @@ export default class App extends Component {
         colect: collectionss,
         isShowNewForm: false,
     };
+    componentDidMount() {
+        console.log("Component mounted");
+        const items = localStorage.getItem("cryptoitem");
+        const parsedItems = JSON.parse(items);
+        console.log(parsedItems);
+        if (parsedItems) {
+            this.setState({
+                colect: parsedItems,
+            });
+        }
+    }
 
+    componentDidUpdate(prevProps, prevState) {
+        console.log("Component did update");
+        if (this.state.colect !== prevState.colect) {
+            console.log("Изменился массив данных");
+        }
+
+        localStorage.setItem("cryptoitem", JSON.stringify(this.state.colect));
+        console.log(prevState.colect);
+        console.log(this.state.colect);
+        // this.setState({});
+    }
     /////////////need/////////
     addNewListing = (newListings) => {
         const listingObj = {
