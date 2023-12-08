@@ -31,9 +31,9 @@ function AddListingModal({
 }) {
     return (
         <div class="fixed-overlay">
-            <div class="modal">
-                <div class="modal_containers">
-                    <h2 className="modal_title">
+            <div class="modals">
+                <div class="modals_containers">
+                    <h2 className="modals_title">
                         {names}/{coin}
                     </h2>
 

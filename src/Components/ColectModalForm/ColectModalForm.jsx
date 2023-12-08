@@ -37,8 +37,8 @@ class ColectModalForm extends Component {
     render() {
         return (
             <div class="fixed-overlay">
-                <div class="modal">
-                    <div class="modal_container">
+                <div class="modals">
+                    <div class="modals_container">
                         <h2 className="modal_title">ADD NEW LISTING</h2>
                         <div onClick={this.props.close} class="cl-btn-3">
                             <span class="top"></span>

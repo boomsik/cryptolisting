@@ -7,6 +7,9 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* 
 .fixed-overlay__modal {
@@ -22,7 +25,7 @@
     content: "";
 } */
 
-.modal {
+.modals {
     display: flex;
     /* display: inline-block; */
     vertical-align: middle;
@@ -30,7 +33,7 @@
     align-items: center;
 }
 
-.modal_containers {
+.modals_containers {
     /* margin: 50px;
     padding: 20px; */
     width: 1300px;
@@ -48,7 +51,7 @@
     text-align: center;
 }
 
-.modal_title {
+.modals_title {
     margin-top: 10px;
 }
 
