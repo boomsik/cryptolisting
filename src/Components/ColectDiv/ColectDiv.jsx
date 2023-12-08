@@ -1,5 +1,4 @@
 import { React, Component } from "react";
-import ColectModal from "../ColectModal/ColectModal";
 import AddListingModal from "../AddListingModal/AddListingModal";
 import "./ColectDiv.css";
 
@@ -19,15 +18,7 @@ class ColectDiv extends Component {
                     <h2 className="text">{this.props.collection.name}</h2>
                     <h2>{this.props.collection.coin}</h2>
                 </div>
-                {/* {this.state.show && (
-                    <ColectModal
-                        close={this.handleOpenModal}
-                        coinName={this.props.collection.name}
-                        coinToken={this.props.collection.coin}
-                        idElement={this.props.collection.id}
-                        del={this.props.del}
-                    ></ColectModal>
-                )} */}
+
                 {this.state.show && (
                     <AddListingModal
                         close={this.handleOpenModal}
