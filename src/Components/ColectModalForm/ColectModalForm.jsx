@@ -45,18 +45,6 @@ class ColectModalForm extends Component {
                             <span class="bot"></span>
                         </div>
                         <form className="form" onSubmit={this.handleSubmit}>
-                            {/* <label>
-                            Project name
-                            <input
-                                style={{
-                                    color: "orange",
-                                }}
-                                type="text"
-                                placeholder="Project name"
-                            />
-                        </label> */}
-
-                            {/* <input className="inputik" id="female" required /> */}
                             <div className="megabox">
                                 <div className="formbox">
                                     <div className="forms">
