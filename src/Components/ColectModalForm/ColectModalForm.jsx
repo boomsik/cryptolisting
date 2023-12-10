@@ -109,6 +109,19 @@ class ColectModalForm extends Component {
                                             className="inputik"
                                             id="female"
                                             required
+                                            name="followers"
+                                            onChange={this.handleChange}
+                                            value={this.state.name}
+                                        />
+                                        <label className="labelik" for="female">
+                                            Followers
+                                        </label>
+                                    </div>
+                                    <div className="forms">
+                                        <input
+                                            className="inputik"
+                                            id="female"
+                                            required
                                             name="website"
                                             onChange={this.handleChange}
                                             value={this.state.name}

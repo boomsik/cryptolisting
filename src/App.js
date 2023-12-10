@@ -6,7 +6,7 @@ import { nanoid } from "nanoid";
 import ColectItem from "./Components/ColectItem/ColectItem";
 import ColectModalForm from "./Components/ColectModalForm/ColectModalForm.jsx";
 import Logo from "./Components/Logo/Logo.jsx";
-
+import SocialLinks from "./Components/AddListingModal/SocialLinks/SocialLinks.jsx";
 export default class App extends Component {
     state = {
         colect: collectionss,
@@ -73,6 +73,7 @@ export default class App extends Component {
                     collection={this.state.colect}
                     del={this.deleteCollection}
                 />
+                {/* <SocialLinks /> */}
             </div>
         );
     }

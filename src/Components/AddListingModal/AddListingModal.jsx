@@ -6,6 +6,7 @@ import ave from "./ave.png";
 import Twitter from "./Twitter/Twitter";
 import Telegram from "./Telegram/Telegram";
 import Website from "./Website/Website";
+import SocialLinks from "./SocialLinks/SocialLinks";
 function AddListingModal({
     close,
     names,
@@ -36,12 +37,11 @@ function AddListingModal({
                     <h2 className="modals_title">
                         {names}/{coin}
                     </h2>
-
                     <div onClick={close} class="cl-btn-33">
                         <span class="top"></span>
                         <span class="bot"></span>
                     </div>
-                    <section
+                    {/* <section
                         id="button-container"
                         onClick={() => del(idElement)}
                     >
@@ -53,30 +53,22 @@ function AddListingModal({
                                 </span>
                             </div>
                         </div>
-                        {/* <button type="button"  onClick={() => del(idElement)}></button> */}
-                    </section>
-                    <div className="social">
+                    </section> */}
+                    {/* <div className="social">
                         <h3>Social link</h3>
                         <ul className="social_list">
                             <li className="social_item">
-                                {/* Twitter:
-                                <a href="https://twitter.com/GROK_2_X">
-                                    {twitter}
-                                </a> */}
                                 <Twitter />
                             </li>
-
                             <li className="social_item">
                                 <Telegram />
-                                {/* Followers: {followers} */}
                             </li>
                             <li className="social_item">
                                 <Website />
-                                {/* Web site:
-                                <a href={website}>{website}</a> */}
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
+                    <SocialLinks />
                     <div className="social">
                         <h3>About this project</h3>
                         <ul className="social_list">

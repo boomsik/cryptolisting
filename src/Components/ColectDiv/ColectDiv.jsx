@@ -15,7 +15,8 @@ class ColectDiv extends Component {
         return (
             <>
                 <div className="box" onClick={this.handleOpenModal}>
-                    <h2 className="text">{this.props.collection.name}</h2>
+                    <h2 className="text">{this.props.collection.names}</h2>
+                    <hr className="lines"></hr>
                     <h2>{this.props.collection.coin}</h2>
                 </div>
 

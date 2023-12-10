@@ -1,0 +1,15 @@
+.social {
+    margin-top: 15px;
+}
+
+.social_list {
+    padding: 0;
+    width: 1000px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_title {
+    color: white;
+}

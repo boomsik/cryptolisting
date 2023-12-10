@@ -11,31 +11,15 @@
     justify-content: center;
     align-items: center;
 }
-/* 
-.fixed-overlay__modal {
-    text-align: center;
-    white-space: nowrap;
-}
-
-.fixed-overlay__modal::after {
-    display: inline-block;
-    vertical-align: middle;
-    width: 0;
-    height: 100%;
-    content: "";
-} */
 
 .modals {
     display: flex;
-    /* display: inline-block; */
     vertical-align: middle;
     justify-content: center;
     align-items: center;
 }
 
 .modals_containers {
-    /* margin: 50px;
-    padding: 20px; */
     width: 1300px;
     height: 700px;
     position: relative;
@@ -49,18 +33,21 @@
         2px 4px 8px 0px rgba(0, 255, 255, 0.7),
         2px 4px 16px 0px rgba(0, 255, 255, 0.7);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .modals_title {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .social {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .social_list {
-    /* margin-top: 45px; */
     width: 100%;
     list-style: none;
     display: flex;
