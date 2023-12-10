@@ -1,0 +1,88 @@
+.project {
+    color: white;
+    margin-top: 15px;
+}
+
+.list_box {
+    display: flex;
+    width: 1000px;
+    justify-content: space-around;
+}
+
+.project_item {
+    position: relative;
+}
+.text {
+    margin-bottom: 6px;
+}
+
+.project_list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button_project {
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 20%/20%;
+    position: relative;
+    border: none;
+    color: white;
+    box-shadow: 0px 0px 2px 0px rgba(0, 255, 255, 0.7),
+        1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+        0px 4px 8px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.project_text {
+    width: 200px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn_copy {
+    top: 10px;
+    right: -5px;
+    width: 24px;
+    height: 14px;
+    border-radius: 20%/20%;
+    position: absolute;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 8px;
+    margin: auto 0;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0px 0px 2px 0px rgba(0, 255, 255, 0.7),
+        1px 2px 4px 0px rgba(0, 255, 255, 0.7);
+}
+
+.mexc_image {
+    padding: 5px;
+    width: 60px;
+    border: 2px solid #00af64;
+    border-radius: 20px;
+}
+
+.mexc_image:hover {
+    box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+        1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+}

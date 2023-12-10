@@ -6,6 +6,7 @@ import { nanoid } from "nanoid";
 import ColectItem from "./Components/ColectItem/ColectItem";
 import ColectModalForm from "./Components/ColectModalForm/ColectModalForm.jsx";
 import Logo from "./Components/Logo/Logo.jsx";
+
 export default class App extends Component {
     state = {
         colect: collectionss,

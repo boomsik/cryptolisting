@@ -1,9 +1,9 @@
 import "./AddListingModal.css";
 import "./AddListingModal.scss";
-import dexs from "./99915600.png";
-import tools from "./dext-large.png";
-import ave from "./ave.png";
+
 import SocialLinks from "./SocialLinks/SocialLinks";
+import AboutProject from "./AboutProject/AboutProject";
+import TrackingApps from "./TrackingApps/TrackingApps";
 function AddListingModal({
     close,
     names,
@@ -53,29 +53,12 @@ function AddListingModal({
                         discord={discord}
                         participants={participants}
                     />
-                    <div className="social">
-                        <h3>About this project</h3>
-                        <ul className="social_list">
-                            <li className="social_item">
-                                Contrac address:
-                                <a href={contract}>
-                                    <br></br>
-                                    {contract}
-                                </a>
-                            </li>
-                            <li className="social_item">
-                                Token contract: <br></br>
-                                {tokencontract}
-                            </li>
-                            <li className="social_item">
-                                Exchange: {exchange}
-                            </li>
-                            <li className="social_item">
-                                Exchange link:<br></br>
-                                <a href={exchangeLink}>{exchangeLink}</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <AboutProject
+                        contractaddres={contract}
+                        tokencontract={tokencontract}
+                        exchange={exchange}
+                        exchangeLink={exchangeLink}
+                    />
                     <div className="social">
                         <h3>Available data</h3>
                         <ul className="social_list">
@@ -100,38 +83,14 @@ function AddListingModal({
                             </li>
                         </ul>
                     </div>
-                    <div className="social">
-                        <h3>Tracking Apps</h3>
-                        <ul className="social_list">
-                            <li className="social_item">
-                                <a href={dexscreener}>
-                                    <img
-                                        className="img"
-                                        src={dexs}
-                                        alt="dexscreener"
-                                    />
-                                </a>
-                            </li>
-                            <li className="social_item">
-                                <a href={dextools}>
-                                    <img
-                                        className="img"
-                                        src={tools}
-                                        alt="dextools"
-                                    />
-                                </a>
-                            </li>
-                            <li className="social_item">
-                                <a href={aves}>
-                                    <img
-                                        className="img"
-                                        src={ave}
-                                        alt="ave.ai"
-                                    />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <TrackingApps
+                        dexscreener={dexscreener}
+                        dextools={dextools}
+                        aves={aves}
+                    />
+                    <button type="button" onClick={() => del(idElement)}>
+                        DELETE
+                    </button>
                 </div>
             </div>
         </div>
