@@ -9,6 +9,11 @@ class ColectModalForm extends Component {
         twitter: "",
         followers: "",
         website: "",
+        visitors: "",
+        telegram: "",
+        members: "",
+        discord: "",
+        participants: "",
         contract: "",
         tokencontract: "",
         blockchain: "",
@@ -109,14 +114,29 @@ class ColectModalForm extends Component {
                                             className="inputik"
                                             id="female"
                                             required
-                                            name="followers"
+                                            name="telegram"
                                             onChange={this.handleChange}
                                             value={this.state.name}
                                         />
                                         <label className="labelik" for="female">
-                                            Followers
+                                            Telegram
                                         </label>
                                     </div>
+                                    <div className="forms">
+                                        <input
+                                            className="inputik"
+                                            id="female"
+                                            required
+                                            name="members"
+                                            onChange={this.handleChange}
+                                            value={this.state.name}
+                                        />
+                                        <label className="labelik" for="female">
+                                            Telegram members
+                                        </label>
+                                    </div>
+                                </div>
+                                <div className="formboxs">
                                     <div className="forms">
                                         <input
                                             className="inputik"
@@ -127,7 +147,46 @@ class ColectModalForm extends Component {
                                             value={this.state.name}
                                         />
                                         <label className="labelik" for="female">
-                                            Web site
+                                            Website
+                                        </label>
+                                    </div>
+                                    <div className="forms">
+                                        <input
+                                            className="inputik"
+                                            id="female"
+                                            required
+                                            name="visitors"
+                                            onChange={this.handleChange}
+                                            value={this.state.name}
+                                        />
+                                        <label className="labelik" for="female">
+                                            Website visitors
+                                        </label>
+                                    </div>
+                                    <div className="forms">
+                                        <input
+                                            className="inputik"
+                                            id="female"
+                                            required
+                                            name="discord"
+                                            onChange={this.handleChange}
+                                            value={this.state.name}
+                                        />
+                                        <label className="labelik" for="female">
+                                            Discord
+                                        </label>
+                                    </div>
+                                    <div className="forms">
+                                        <input
+                                            className="inputik"
+                                            id="female"
+                                            required
+                                            name="participants"
+                                            onChange={this.handleChange}
+                                            value={this.state.name}
+                                        />
+                                        <label className="labelik" for="female">
+                                            Discord participants
                                         </label>
                                     </div>
                                 </div>
@@ -178,7 +237,7 @@ class ColectModalForm extends Component {
                                             className="inputik"
                                             id="female"
                                             required
-                                            name="exchangeLink"
+                                            name="exchange"
                                             onChange={this.handleChange}
                                             value={this.state.name}
                                         />
@@ -354,259 +413,3 @@ class ColectModalForm extends Component {
 }
 
 export default ColectModalForm;
-
-// function ColectModalForm({ close }) {
-//     return (
-//         <div class="fixed-overlay">
-//             <div class="modal">
-//                 <div class="modal_container">
-//                     <h2 className="modal_title">ADD NEW LISTING</h2>
-//                     <div onClick={close} class="cl-btn-3">
-//                         <span class="top"></span>
-//                         <span class="bot"></span>
-//                     </div>
-//                     <form className="form">
-//                         {/* <label>
-//                             Project name
-//                             <input
-//                                 style={{
-//                                     color: "orange",
-//                                 }}
-//                                 type="text"
-//                                 placeholder="Project name"
-//                             />
-//                         </label> */}
-
-//                         {/* <input className="inputik" id="female" required /> */}
-//                         <div className="megabox">
-//                             <div className="formbox">
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Project name
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Project name
-//                                     </label>
-//                                 </div>
-//                             </div>
-//                             <div className="formboxs">
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Twitter
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Followers
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Web site
-//                                     </label>
-//                                 </div>
-//                             </div>
-//                             <div className="formboxs">
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Contract address
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Token contract
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Blockchain
-//                                     </label>
-//                                 </div>
-//                             </div>
-//                             <div className="formboxs">
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Exchange
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Exchange link
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Data listing
-//                                     </label>
-//                                 </div>
-//                             </div>
-//                             <div className="formboxs">
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Dexscreener link
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Dextools link
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Ave link
-//                                     </label>
-//                                 </div>
-//                             </div>
-//                             <div className="formboxs">
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         First listing data
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Holders
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         24H Volue
-//                                     </label>
-//                                 </div>
-//                             </div>
-//                             <div className="formboxs">
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Token for 1 USDT
-//                                     </label>
-//                                 </div>
-//                                 <div className="forms">
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Token for 10 USDT
-//                                     </label>
-//                                 </div>
-//                                 <div
-//                                     className="forms"
-//                                     style={{
-//                                         marginBottom: "50px",
-//                                     }}
-//                                 >
-//                                     <input
-//                                         className="inputik"
-//                                         id="female"
-//                                         required
-//                                     />
-//                                     <label className="labelik" for="female">
-//                                         Has grown since listing on:
-//                                     </label>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                         <button className="btna" type="submit">
-//                             ADD LISTING
-//                         </button>
-//                     </form>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default ColectModalForm;

@@ -1,13 +1,16 @@
 import "./SocialComponent.css";
 
-function SocialComponent({ image, man }) {
+function SocialComponent({ image, man, followers, sociallink, help }) {
     return (
         <div className="boxex">
-            <img className="image" src={image} alt="" />
+            <a href={sociallink}>
+                <img className="image" src={image} alt="" />
+            </a>
+
             <div className="followers tooltips">
                 <img className="man" src={man} alt="man" />
-                <p className="followers_text">170000</p>
-                <span className="tooltiptexts">Followers</span>
+                <p className="followers_text">{followers}</p>
+                <span className="tooltiptexts">{help}</span>
             </div>
             <hr className="line"></hr>
             <hr className="line_right"></hr>

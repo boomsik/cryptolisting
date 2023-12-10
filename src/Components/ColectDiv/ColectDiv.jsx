@@ -28,6 +28,11 @@ class ColectDiv extends Component {
                         twitter={this.props.collection.twitter}
                         followers={this.props.collection.followers}
                         website={this.props.collection.website}
+                        visitors={this.props.collection.visitors}
+                        telegram={this.props.collection.telegram}
+                        members={this.props.collection.members}
+                        discord={this.props.collection.discord}
+                        participants={this.props.collection.participants}
                         contract={this.props.collection.contract}
                         tokencontract={this.props.collection.tokencontract}
                         blockchain={this.props.collection.blockchain}

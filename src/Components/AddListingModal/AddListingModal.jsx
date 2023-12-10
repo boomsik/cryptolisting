@@ -3,9 +3,6 @@ import "./AddListingModal.scss";
 import dexs from "./99915600.png";
 import tools from "./dext-large.png";
 import ave from "./ave.png";
-import Twitter from "./Twitter/Twitter";
-import Telegram from "./Telegram/Telegram";
-import Website from "./Website/Website";
 import SocialLinks from "./SocialLinks/SocialLinks";
 function AddListingModal({
     close,
@@ -14,6 +11,11 @@ function AddListingModal({
     twitter,
     followers,
     website,
+    visitors,
+    telegram,
+    members,
+    discord,
+    participants,
     contract,
     tokencontract,
     exchange,
@@ -41,34 +43,16 @@ function AddListingModal({
                         <span class="top"></span>
                         <span class="bot"></span>
                     </div>
-                    {/* <section
-                        id="button-container"
-                        onClick={() => del(idElement)}
-                    >
-                        <div class="container">
-                            <div class="button v15">
-                                <span class="label">Delete</span>
-                                <span class="icon">
-                                    <span></span>
-                                </span>
-                            </div>
-                        </div>
-                    </section> */}
-                    {/* <div className="social">
-                        <h3>Social link</h3>
-                        <ul className="social_list">
-                            <li className="social_item">
-                                <Twitter />
-                            </li>
-                            <li className="social_item">
-                                <Telegram />
-                            </li>
-                            <li className="social_item">
-                                <Website />
-                            </li>
-                        </ul>
-                    </div> */}
-                    <SocialLinks />
+                    <SocialLinks
+                        twitter={twitter}
+                        followers={followers}
+                        website={website}
+                        visitors={visitors}
+                        telegram={telegram}
+                        members={members}
+                        discord={discord}
+                        participants={participants}
+                    />
                     <div className="social">
                         <h3>About this project</h3>
                         <ul className="social_list">
