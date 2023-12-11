@@ -4,6 +4,7 @@ import "./AddListingModal.scss";
 import SocialLinks from "./SocialLinks/SocialLinks";
 import AboutProject from "./AboutProject/AboutProject";
 import TrackingApps from "./TrackingApps/TrackingApps";
+import AvailableData from "./AvailableData/AvailableData";
 function AddListingModal({
     close,
     names,
@@ -59,7 +60,13 @@ function AddListingModal({
                         exchange={exchange}
                         exchangeLink={exchangeLink}
                     />
-                    <div className="social">
+                    <AvailableData
+                        firstlistingdata={firstlistingdata}
+                        holders={holders}
+                        roi={roi}
+                        volume={volume}
+                    />
+                    {/* <div className="social">
                         <h3>Available data</h3>
                         <ul className="social_list">
                             <li className="social_item">
@@ -71,8 +78,8 @@ function AddListingModal({
                                 24H Valume: {volume}
                             </li>
                         </ul>
-                    </div>
-                    <div className="social">
+                    </div> */}
+                    {/* <div className="social">
                         <h3>Price before listing</h3>
                         <ul className="social_list">
                             <li className="social_item">
@@ -82,7 +89,7 @@ function AddListingModal({
                                 Token for 10 USDT: {tokenforten}
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                     <TrackingApps
                         dexscreener={dexscreener}
                         dextools={dextools}

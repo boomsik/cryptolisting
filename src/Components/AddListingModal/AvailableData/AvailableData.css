@@ -1,0 +1,40 @@
+.available {
+    color: white;
+}
+
+.available_list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.available_flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.available_text {
+    margin: 0;
+    margin-right: 40px;
+}
+
+.pancake {
+    z-index: 3;
+    background-color: rgb(190 223 255);
+    width: 55px;
+    height: 55px;
+    border-radius: 20px;
+    border: 1px solid #00af64;
+    margin-left: 20px;
+}
+
+.pancake:hover {
+    box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+        1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+}

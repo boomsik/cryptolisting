@@ -6,6 +6,7 @@ import { nanoid } from "nanoid";
 import ColectItem from "./Components/ColectItem/ColectItem";
 import ColectModalForm from "./Components/ColectModalForm/ColectModalForm.jsx";
 import Logo from "./Components/Logo/Logo.jsx";
+import AvailableData from "./Components/AddListingModal/AvailableData/AvailableData.jsx";
 
 export default class App extends Component {
     state = {
@@ -73,6 +74,7 @@ export default class App extends Component {
                     collection={this.state.colect}
                     del={this.deleteCollection}
                 />
+                {/* <AvailableData /> */}
             </div>
         );
     }
