@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/cryptolisting/static/css/main.2228a561.css",
-    "main.js": "/cryptolisting/static/js/main.f560ac1a.js",
+    "main.css": "/cryptolisting/static/css/main.cbde8fc6.css",
+    "main.js": "/cryptolisting/static/js/main.bccfcad7.js",
     "static/js/787.3877e142.chunk.js": "/cryptolisting/static/js/787.3877e142.chunk.js",
+    "static/media/mexc-logo.png": "/cryptolisting/static/media/mexc-logo.92d11b7e52489b9183e3.png",
     "static/media/dext-large.png": "/cryptolisting/static/media/dext-large.8a495dc3f14793c6be32.png",
     "static/media/twitter.png": "/cryptolisting/static/media/twitter.d0a54f09725fc1de7121.png",
     "static/media/telegrammm.png": "/cryptolisting/static/media/telegrammm.b6e08b81dc6ffe7401a2.png",
@@ -10,12 +11,12 @@
     "static/media/ave.png": "/cryptolisting/static/media/ave.f1d6889c22166a9e34c1.png",
     "static/media/man.svg": "/cryptolisting/static/media/man.00e650475cbc6a0394359c8ce55c7403.svg",
     "index.html": "/cryptolisting/index.html",
-    "main.2228a561.css.map": "/cryptolisting/static/css/main.2228a561.css.map",
-    "main.f560ac1a.js.map": "/cryptolisting/static/js/main.f560ac1a.js.map",
+    "main.cbde8fc6.css.map": "/cryptolisting/static/css/main.cbde8fc6.css.map",
+    "main.bccfcad7.js.map": "/cryptolisting/static/js/main.bccfcad7.js.map",
     "787.3877e142.chunk.js.map": "/cryptolisting/static/js/787.3877e142.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2228a561.css",
-    "static/js/main.f560ac1a.js"
+    "static/css/main.cbde8fc6.css",
+    "static/js/main.bccfcad7.js"
   ]
 }
