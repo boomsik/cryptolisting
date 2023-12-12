@@ -25,7 +25,9 @@
         "volume": "$29K",
         "tokenforone": "30",
         "tokenforten": "300",
-        "roi": "2400%"
+        "roi": "2400%",
+        "pancakeswap": "https://pancakeswap.finance/",
+        "uniswap": "https://uniswap.org/"
     },
     {
         "id": "id-2",
@@ -48,7 +50,9 @@
         "volume": "$23K",
         "tokenforone": "75",
         "tokenforten": "750",
-        "roi": "2400%"
+        "roi": "2400%",
+        "pancakeswap": "https://pancakeswap.finance/",
+        "uniswap": "https://uniswap.org/"
     },
     {
         "id": "id-3",
@@ -71,6 +75,8 @@
         "volume": "$23K",
         "tokenforone": "75",
         "tokenforten": "750",
-        "roi": "2400%"
+        "roi": "2400%",
+        "pancakeswap": "https://pancakeswap.finance/",
+        "uniswap": "https://uniswap.org/"
     }
 ]

@@ -35,8 +35,8 @@ function SocialLinks({
                         <SocialComponent
                             image={imageTelegram}
                             man={man}
-                            sociallink={website}
-                            followers={visitors}
+                            sociallink={telegram}
+                            followers={members}
                             help={"members"}
                         />
                     </li>
@@ -46,8 +46,8 @@ function SocialLinks({
                         <SocialComponent
                             image={imageWeb}
                             man={man}
-                            sociallink={telegram}
-                            followers={members}
+                            sociallink={website}
+                            followers={visitors}
                             help={"visitors"}
                         />
                     </li>

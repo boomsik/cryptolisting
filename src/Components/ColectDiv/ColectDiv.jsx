@@ -52,6 +52,8 @@ class ColectDiv extends Component {
                         roi={this.props.collection.roi}
                         idElement={this.props.collection.id}
                         del={this.props.del}
+                        pancakeswap={this.props.collection.pancakeswap}
+                        uniswap={this.props.collection.uniswap}
                     ></AddListingModal>
                 )}
             </>

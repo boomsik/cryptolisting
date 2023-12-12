@@ -29,6 +29,8 @@ class ColectModalForm extends Component {
         tokenforone: "",
         tokenforten: "",
         roi: "",
+        pancakeswap: "",
+        uniswap: "",
     };
     handleSubmit = (e) => {
         e.preventDefault();
@@ -51,7 +53,7 @@ class ColectModalForm extends Component {
                         </div>
                         <form className="form" onSubmit={this.handleSubmit}>
                             <div className="megabox">
-                                <div className="formbox">
+                                <div className="formboxs">
                                     <div className="forms">
                                         <input
                                             className="inputik"
@@ -79,6 +81,32 @@ class ColectModalForm extends Component {
                                             for="female1"
                                         >
                                             Token name
+                                        </label>
+                                    </div>
+                                    <div className="forms">
+                                        <input
+                                            className="inputik"
+                                            id="female"
+                                            required
+                                            name="blockchain"
+                                            onChange={this.handleChange}
+                                            value={this.state.name}
+                                        />
+                                        <label className="labelik" for="female">
+                                            Blockchain
+                                        </label>
+                                    </div>
+                                    <div className="forms">
+                                        <input
+                                            className="inputik"
+                                            id="female"
+                                            required
+                                            name="datalisting"
+                                            onChange={this.handleChange}
+                                            value={this.state.name}
+                                        />
+                                        <label className="labelik" for="female">
+                                            Data listing
                                         </label>
                                     </div>
                                 </div>
@@ -222,21 +250,6 @@ class ColectModalForm extends Component {
                                             className="inputik"
                                             id="female"
                                             required
-                                            name="blockchain"
-                                            onChange={this.handleChange}
-                                            value={this.state.name}
-                                        />
-                                        <label className="labelik" for="female">
-                                            Blockchain
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="formboxs">
-                                    <div className="forms">
-                                        <input
-                                            className="inputik"
-                                            id="female"
-                                            required
                                             name="exchange"
                                             onChange={this.handleChange}
                                             value={this.state.name}
@@ -258,17 +271,59 @@ class ColectModalForm extends Component {
                                             Exchange link
                                         </label>
                                     </div>
+                                </div>
+                                {/* <div className="formboxs"></div> */}
+                                <div className="formboxs">
                                     <div className="forms">
                                         <input
                                             className="inputik"
                                             id="female"
                                             required
-                                            name="datalisting"
+                                            name="firstlistingdata"
                                             onChange={this.handleChange}
                                             value={this.state.name}
                                         />
                                         <label className="labelik" for="female">
-                                            Data listing
+                                            First listing data
+                                        </label>
+                                    </div>
+                                    <div className="forms">
+                                        <input
+                                            className="inputik"
+                                            id="female"
+                                            required
+                                            name="holders"
+                                            onChange={this.handleChange}
+                                            value={this.state.name}
+                                        />
+                                        <label className="labelik" for="female">
+                                            Holders
+                                        </label>
+                                    </div>
+                                    <div className="forms">
+                                        <input
+                                            className="inputik"
+                                            id="female"
+                                            required
+                                            name="volume"
+                                            onChange={this.handleChange}
+                                            value={this.state.name}
+                                        />
+                                        <label className="labelik" for="female">
+                                            24H Volue
+                                        </label>
+                                    </div>
+                                    <div className="forms">
+                                        <input
+                                            className="inputik"
+                                            id="female"
+                                            required
+                                            name="roi"
+                                            onChange={this.handleChange}
+                                            value={this.state.name}
+                                        />
+                                        <label className="labelik" for="female">
+                                            Has grown since listing on:
                                         </label>
                                     </div>
                                 </div>
@@ -313,18 +368,19 @@ class ColectModalForm extends Component {
                                         </label>
                                     </div>
                                 </div>
+
                                 <div className="formboxs">
                                     <div className="forms">
                                         <input
                                             className="inputik"
                                             id="female"
                                             required
-                                            name="firstlistingdata"
+                                            name="pancakeswap"
                                             onChange={this.handleChange}
                                             value={this.state.name}
                                         />
                                         <label className="labelik" for="female">
-                                            First listing data
+                                            Pancakeswap
                                         </label>
                                     </div>
                                     <div className="forms">
@@ -332,76 +388,17 @@ class ColectModalForm extends Component {
                                             className="inputik"
                                             id="female"
                                             required
-                                            name="holders"
+                                            name="uniswap"
                                             onChange={this.handleChange}
                                             value={this.state.name}
                                         />
                                         <label className="labelik" for="female">
-                                            Holders
-                                        </label>
-                                    </div>
-                                    <div className="forms">
-                                        <input
-                                            className="inputik"
-                                            id="female"
-                                            required
-                                            name="volume"
-                                            onChange={this.handleChange}
-                                            value={this.state.name}
-                                        />
-                                        <label className="labelik" for="female">
-                                            24H Volue
-                                        </label>
-                                    </div>
-                                </div>
-                                <div className="formboxs">
-                                    <div className="forms">
-                                        <input
-                                            className="inputik"
-                                            id="female"
-                                            required
-                                            name="tokenforone"
-                                            onChange={this.handleChange}
-                                            value={this.state.name}
-                                        />
-                                        <label className="labelik" for="female">
-                                            Token for 1 USDT
-                                        </label>
-                                    </div>
-                                    <div className="forms">
-                                        <input
-                                            className="inputik"
-                                            id="female"
-                                            required
-                                            name="tokenforten"
-                                            onChange={this.handleChange}
-                                            value={this.state.name}
-                                        />
-                                        <label className="labelik" for="female">
-                                            Token for 10 USDT
-                                        </label>
-                                    </div>
-                                    <div
-                                        className="forms"
-                                        style={{
-                                            marginBottom: "50px",
-                                        }}
-                                    >
-                                        <input
-                                            className="inputik"
-                                            id="female"
-                                            required
-                                            name="roi"
-                                            onChange={this.handleChange}
-                                            value={this.state.name}
-                                        />
-                                        <label className="labelik" for="female">
-                                            Has grown since listing on:
+                                            Uniswap
                                         </label>
                                     </div>
                                 </div>
                             </div>
-                            <button className="btna" type="submit">
+                            <button className="btna sub" type="submit">
                                 ADD LISTING
                             </button>
                         </form>

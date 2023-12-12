@@ -27,7 +27,7 @@ function AboutProject({
                             type="button"
                             onClick={() => {
                                 navigator.clipboard.writeText(
-                                    "0x05800c8635c53dce61358bdf6c55eec7ace072ad"
+                                    `"${tokencontract}"`
                                 );
                             }}
                         >

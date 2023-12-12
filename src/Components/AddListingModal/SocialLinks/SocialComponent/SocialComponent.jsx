@@ -3,7 +3,7 @@ import "./SocialComponent.css";
 function SocialComponent({ image, man, followers, sociallink, help }) {
     return (
         <div className="boxex">
-            <a href={sociallink}>
+            <a className="image_url" href={sociallink}>
                 <img className="image" src={image} alt="" />
             </a>
 

@@ -30,6 +30,8 @@ function AddListingModal({
     dexscreener,
     dextools,
     aves,
+    pancakeswap,
+    uniswap,
     del,
     idElement,
 }) {
@@ -65,6 +67,8 @@ function AddListingModal({
                         holders={holders}
                         roi={roi}
                         volume={volume}
+                        pancakeswap={pancakeswap}
+                        uniswap={uniswap}
                     />
                     {/* <div className="social">
                         <h3>Available data</h3>
