@@ -20,12 +20,16 @@ function AvailableData({
             </ul>
             <div className="available_flex">
                 <p className="available_text">A place where u can swap:</p>
-                <a href={pancakeswap}>
-                    <img className="pancake" src={images} alt="" />
-                </a>
-                <a href={uniswap}>
-                    <img className="pancake" src={blackuniswap} alt="" />
-                </a>
+                {pancakeswap !== "none" && (
+                    <a href={pancakeswap}>
+                        <img className="pancake" src={images} alt="" />
+                    </a>
+                )}
+                {uniswap !== "none" && (
+                    <a href={uniswap}>
+                        <img className="pancake" src={blackuniswap} alt="" />
+                    </a>
+                )}
             </div>
         </div>
     );

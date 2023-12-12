@@ -1,5 +1,5 @@
 import "./ColectModalForm.css";
-
+import ColectInput from "./ColectInputs/ColectInput";
 import { React, Component } from "react";
 
 class ColectModalForm extends Component {
@@ -53,7 +53,7 @@ class ColectModalForm extends Component {
                         </div>
                         <form className="form" onSubmit={this.handleSubmit}>
                             <div className="megabox">
-                                <div className="formboxs">
+                                {/* <div className="formboxs">
                                     <div className="forms">
                                         <input
                                             className="inputik"
@@ -109,7 +109,11 @@ class ColectModalForm extends Component {
                                             Data listing
                                         </label>
                                     </div>
-                                </div>
+                                </div> */}
+                                <ColectInput
+                                    change={this.handleChange}
+                                    value={this.state.name}
+                                />
                                 <div className="formboxs">
                                     <div className="forms">
                                         <input
@@ -164,6 +168,7 @@ class ColectModalForm extends Component {
                                         </label>
                                     </div>
                                 </div>
+
                                 <div className="formboxs">
                                     <div className="forms">
                                         <input

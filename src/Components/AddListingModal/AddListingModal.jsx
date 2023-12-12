@@ -99,7 +99,11 @@ function AddListingModal({
                         dextools={dextools}
                         aves={aves}
                     />
-                    <button type="button" onClick={() => del(idElement)}>
+                    <button
+                        className="delete"
+                        type="button"
+                        onClick={() => del(idElement)}
+                    >
                         DELETE
                     </button>
                 </div>
