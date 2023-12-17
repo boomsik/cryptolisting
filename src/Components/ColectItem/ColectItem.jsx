@@ -33,25 +33,27 @@ function ColectItem({ collection, del, backdrop, escape }) {
                         />
                     ))}
                 </ul>
-                <ReactPaginate
-                    breakLabel="....."
-                    nextLabel=" >"
-                    onPageChange={handlePageClick}
-                    pageRangeDisplayed={3}
-                    pageCount={pageCount}
-                    previousLabel="<"
-                    renderOnZeroPageCount={null}
-                    containerClassName="pagination"
-                    pageClassName="pagination_item"
-                    previousClassName="pagination_item_tag"
-                    nextClassName="pagination_item_next"
-                    pageLinkClassName="page-num"
-                    previousLinkClassName="page-num"
-                    nextLinkClassName="page-num"
-                    activeLinkClassName="active"
-                    activeClassName="active_li"
-                    breakClassName="free_dot"
-                />
+                {data.length + 1 > 13 && (
+                    <ReactPaginate
+                        breakLabel="....."
+                        nextLabel=" >"
+                        onPageChange={handlePageClick}
+                        pageRangeDisplayed={3}
+                        pageCount={pageCount}
+                        previousLabel="<"
+                        renderOnZeroPageCount={null}
+                        containerClassName="pagination"
+                        pageClassName="pagination_item"
+                        previousClassName="pagination_item_tag"
+                        nextClassName="pagination_item_next"
+                        pageLinkClassName="page-num"
+                        previousLinkClassName="page-num"
+                        nextLinkClassName="page-num"
+                        activeLinkClassName="active"
+                        activeClassName="active_li"
+                        breakClassName="free_dot"
+                    />
+                )}
             </div>
         </>
     );
