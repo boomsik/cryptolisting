@@ -42,7 +42,7 @@ export default class App extends Component {
             id: nanoid(),
         };
         this.setState((prev) => ({
-            colect: [...prev.colect, listingObj],
+            colect: [listingObj, ...prev.colect],
         }));
     };
 
@@ -59,19 +59,39 @@ export default class App extends Component {
             isShowNewForm: !this.state.isShowNewForm,
         });
     };
+
+    handleEscape = () => {
+        this.setState({
+            isShowNewForm: false,
+        });
+    };
+
+    handleBackDropClick = (e) => {
+        console.log("Click in backdrop");
+        console.log(e.currentTarget);
+        console.log(e.target);
+        if (e.currentTarget === e.target) {
+            this.handleEscape();
+        }
+    };
+
     render() {
         return (
             <div className="App">
                 <Logo closeAndOpen={this.handleOpenAndCloseForm} />
                 {this.state.isShowNewForm && (
                     <ColectModalForm
+                        escape={this.handleEscape}
                         close={this.handleOpenAndCloseForm}
                         addNewListing={this.addNewListing}
+                        backdrop={this.handleBackDropClick}
                     />
                 )}
                 <ColectItem
                     collection={this.state.colect}
                     del={this.deleteCollection}
+                    backdrop={this.handleBackDropClick}
+                    escape={this.handleEscape}
                 />
             </div>
         );

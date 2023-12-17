@@ -54,6 +54,8 @@ class ColectDiv extends Component {
                         del={this.props.del}
                         pancakeswap={this.props.collection.pancakeswap}
                         uniswap={this.props.collection.uniswap}
+                        backdrop={this.props.backdrop}
+                        escape={this.props.escape}
                     ></AddListingModal>
                 )}
             </>

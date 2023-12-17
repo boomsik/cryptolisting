@@ -5,6 +5,7 @@ import SocialLinks from "./SocialLinks/SocialLinks";
 import AboutProject from "./AboutProject/AboutProject";
 import TrackingApps from "./TrackingApps/TrackingApps";
 import AvailableData from "./AvailableData/AvailableData";
+
 function AddListingModal({
     close,
     names,
@@ -34,6 +35,8 @@ function AddListingModal({
     uniswap,
     del,
     idElement,
+    escape,
+    backdrop,
 }) {
     return (
         <div class="fixed-overlay">
@@ -70,30 +73,7 @@ function AddListingModal({
                         pancakeswap={pancakeswap}
                         uniswap={uniswap}
                     />
-                    {/* <div className="social">
-                        <h3>Available data</h3>
-                        <ul className="social_list">
-                            <li className="social_item">
-                                First listing data: {firstlistingdata}
-                            </li>
-                            <li className="social_item">Holders: {holders}</li>
-                            <li className="social_item">ROI: {roi}</li>
-                            <li className="social_item">
-                                24H Valume: {volume}
-                            </li>
-                        </ul>
-                    </div> */}
-                    {/* <div className="social">
-                        <h3>Price before listing</h3>
-                        <ul className="social_list">
-                            <li className="social_item">
-                                Token for 1 USDT: {tokenforone}
-                            </li>
-                            <li className="social_item">
-                                Token for 10 USDT: {tokenforten}
-                            </li>
-                        </ul>
-                    </div> */}
+
                     <TrackingApps
                         dexscreener={dexscreener}
                         dextools={dextools}

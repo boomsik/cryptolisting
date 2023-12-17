@@ -32,6 +32,21 @@ class ColectModalForm extends Component {
         pancakeswap: "",
         uniswap: "",
     };
+    componentDidMount() {
+        window.addEventListener("keydown", this.handleKeyDown);
+    }
+
+    componentWillUnmount() {
+        console.log("Component will unmount");
+        window.removeEventListener("keydown", this.handleKeyDown);
+    }
+
+    handleKeyDown = (e) => {
+        if (e.code === "Escape") {
+            console.log("close");
+            this.props.escape();
+        }
+    };
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.addNewListing(this.state);
@@ -43,7 +58,7 @@ class ColectModalForm extends Component {
 
     render() {
         return (
-            <div class="fixed-overlay">
+            <div class="fixed-overlay" onClick={this.props.backdrop}>
                 <div class="modals">
                     <div class="modals_container">
                         <h2 className="modal_title">ADD NEW LISTING</h2>
@@ -53,63 +68,6 @@ class ColectModalForm extends Component {
                         </div>
                         <form className="form" onSubmit={this.handleSubmit}>
                             <div className="megabox">
-                                {/* <div className="formboxs">
-                                    <div className="forms">
-                                        <input
-                                            className="inputik"
-                                            id="female"
-                                            required
-                                            name="names"
-                                            onChange={this.handleChange}
-                                            value={this.state.name}
-                                        />
-                                        <label className="labelik" for="female">
-                                            Project name
-                                        </label>
-                                    </div>
-                                    <div className="forms">
-                                        <input
-                                            className="inputik"
-                                            id="female1"
-                                            required
-                                            name="coin"
-                                            onChange={this.handleChange}
-                                            value={this.state.name}
-                                        />
-                                        <label
-                                            className="labelik"
-                                            for="female1"
-                                        >
-                                            Token name
-                                        </label>
-                                    </div>
-                                    <div className="forms">
-                                        <input
-                                            className="inputik"
-                                            id="female"
-                                            required
-                                            name="blockchain"
-                                            onChange={this.handleChange}
-                                            value={this.state.name}
-                                        />
-                                        <label className="labelik" for="female">
-                                            Blockchain
-                                        </label>
-                                    </div>
-                                    <div className="forms">
-                                        <input
-                                            className="inputik"
-                                            id="female"
-                                            required
-                                            name="datalisting"
-                                            onChange={this.handleChange}
-                                            value={this.state.name}
-                                        />
-                                        <label className="labelik" for="female">
-                                            Data listing
-                                        </label>
-                                    </div>
-                                </div> */}
                                 <ColectInput
                                     change={this.handleChange}
                                     value={this.state.name}

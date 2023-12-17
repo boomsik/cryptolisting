@@ -27,58 +27,6 @@ function ColectInput({ change, value }) {
                 title={"Data listing"}
                 name="datalisting"
             />
-            {/* <div className="forms">
-                <input
-                    className="inputik"
-                    id="female"
-                    required
-                    name="names"
-                    onChange={change}
-                    value={names}
-                />
-                <label className="labelik" for="female">
-                    Project name
-                </label>
-            </div>
-            <div className="forms">
-                <input
-                    className="inputik"
-                    id="female1"
-                    required
-                    name="coin"
-                    onChange={change}
-                    value={names}
-                />
-                <label className="labelik" for="female1">
-                    Token name
-                </label>
-            </div>
-            <div className="forms">
-                <input
-                    className="inputik"
-                    id="female"
-                    required
-                    name="blockchain"
-                    onChange={change}
-                    value={names}
-                />
-                <label className="labelik" for="female">
-                    Blockchain
-                </label>
-            </div>
-            <div className="forms">
-                <input
-                    className="inputik"
-                    id="female"
-                    required
-                    name="datalisting"
-                    onChange={change}
-                    value={names}
-                />
-                <label className="labelik" for="female">
-                    Data listing
-                </label>
-            </div> */}
         </div>
     );
 }

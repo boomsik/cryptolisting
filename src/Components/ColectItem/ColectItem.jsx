@@ -2,12 +2,12 @@ import ColectDiv from "../ColectDiv/ColectDiv";
 import ReactPaginate from "react-paginate";
 import { React, useEffect, useState } from "react";
 import "./ColectItem.css";
-function ColectItem({ collection, del }) {
+function ColectItem({ collection, del, backdrop, escape }) {
     const data = collection;
     const [currentItems, setCurrentItems] = useState([]);
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);
-    const itemsPerPage = 10;
+    const itemsPerPage = 12;
 
     useEffect(() => {
         const endOffset = itemOffset + itemsPerPage;
@@ -24,7 +24,13 @@ function ColectItem({ collection, del }) {
             <div className="containers">
                 <ul className="list">
                     {currentItems.map((el) => (
-                        <ColectDiv key={el.id} collection={el} del={del} />
+                        <ColectDiv
+                            key={el.id}
+                            collection={el}
+                            del={del}
+                            backdrop={backdrop}
+                            escape={escape}
+                        />
                     ))}
                 </ul>
                 <ReactPaginate
