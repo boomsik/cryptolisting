@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cryptolisting/static/css/main.d4b6e13b.css",
-    "main.js": "/cryptolisting/static/js/main.9738dd97.js",
+    "main.js": "/cryptolisting/static/js/main.eb68d8fc.js",
     "static/js/787.3877e142.chunk.js": "/cryptolisting/static/js/787.3877e142.chunk.js",
     "static/media/uniswap-logo-black.png": "/cryptolisting/static/media/uniswap-logo-black.eba48f956d61df58fb62.png",
     "static/media/mexc-logo.png": "/cryptolisting/static/media/mexc-logo.92d11b7e52489b9183e3.png",
@@ -14,11 +14,11 @@
     "static/media/man.svg": "/cryptolisting/static/media/man.00e650475cbc6a0394359c8ce55c7403.svg",
     "index.html": "/cryptolisting/index.html",
     "main.d4b6e13b.css.map": "/cryptolisting/static/css/main.d4b6e13b.css.map",
-    "main.9738dd97.js.map": "/cryptolisting/static/js/main.9738dd97.js.map",
+    "main.eb68d8fc.js.map": "/cryptolisting/static/js/main.eb68d8fc.js.map",
     "787.3877e142.chunk.js.map": "/cryptolisting/static/js/787.3877e142.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4b6e13b.css",
-    "static/js/main.9738dd97.js"
+    "static/js/main.eb68d8fc.js"
   ]
 }
